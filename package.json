@@ -7,7 +7,12 @@
   "license": "Apache-2.0",
   "scripts": {
     "clean": "rimraf build",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc"
+  },
+  "exports": {
+    ".": "./build/index.js",
+    "./gatus": "./build/gatus.js",
+    "./logging": "./build/logging.js"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
