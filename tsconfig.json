@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "lib": ["esnext"],
+        "target": "ES6",
+        "module": "commonjs",
+        "outDir": "build",
+        "rootDir": "src",
+        "strict": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "types": ["node"],
+        "typeRoots": ["./@types", "./node_modules/@types"]
+    },
+    "include": ["src", "@types"],
+    "ts-node": {
+        "files": true
+    }
+}
+
