@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "node": ">=16.0.0",
   "main": "build/index.js",
-  "author": "",
+  "author": "Jannik Laugmand Bülow",
   "license": "Apache-2.0",
   "scripts": {
     "clean": "rimraf build",
