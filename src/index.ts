@@ -122,3 +122,6 @@ export function start(
 ): void {
     worker(hostname, endpointKey, token, conditions, interval, log).catch(e => log(LogLevel.Error, e));
 }
+
+export * from "./gatus";
+export * from "./logging";
