@@ -36,6 +36,7 @@ export function generateEndpointKey(name: string, group: string): string {
     function sanitize(s: string): string {
         return s.trim()
                 .toLowerCase() 
+                .replaceAll(" ", "-")
                 .replaceAll("/", "-")
                 .replaceAll("_", "-")
                 .replaceAll(".", "-")
