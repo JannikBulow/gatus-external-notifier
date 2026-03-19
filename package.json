@@ -5,6 +5,10 @@
   "main": "build/index.js",
   "author": "Jannik Laugmand Bülow",
   "license": "Apache-2.0",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/JannikBulow/gatus-external-notifier.git"
+  },
   "scripts": {
     "clean": "rimraf build",
     "build": "npm run clean && tsc"
