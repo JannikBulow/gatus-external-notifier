@@ -6,8 +6,11 @@ on:
       - 'v*'
 
 jobs:
-  build-and-publish:
+  publish:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
