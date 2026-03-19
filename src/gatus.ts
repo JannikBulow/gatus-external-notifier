@@ -64,7 +64,7 @@ export function generateGatusExternalEndpointURL(hostname: string, endpointKey: 
  * Posts an external endpoint status to a Gatus server.
  * @param url - The url to post the status to.
  * @param token - Bearer token configured in Gatus for the external endpoint.
- * @param req - The actual status object.
+ * @param status - The actual status object.
  * @param log - Logging function.
  * @see generateGatusExternalEndpointURL
  * @see logFuncs
@@ -72,12 +72,12 @@ export function generateGatusExternalEndpointURL(hostname: string, endpointKey: 
 export async function sendExternalEndpointStatus(
     url: string, 
     token: string, 
-    req: ExternalEndpointStatus,
+    status: ExternalEndpointStatus,
     log: LogFunc = logFuncs.consoleLog
 ): Promise<void> {
-    let finalURL = `${url}?success=${req.success}`;
-    if (req.error !== undefined) finalURL += `&error=${encodeURIComponent(req.error)}`
-    if (req.duration !== undefined) finalURL += `&duration=${encodeURIComponent(Math.floor(req.duration) + "ms")}`;
+    let finalURL = `${url}?success=${status.success}`;
+    if (status.error !== undefined) finalURL += `&error=${encodeURIComponent(status.error)}`
+    if (status.duration !== undefined) finalURL += `&duration=${encodeURIComponent(Math.floor(status.duration) + "ms")}`;
 
     log(LogLevel.Debug, finalURL);
 
