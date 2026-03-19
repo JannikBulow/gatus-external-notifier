@@ -1,6 +1,6 @@
 {
   "name": "gatus-external-notifier",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "node": ">=16.0.0",
   "main": "build/index.js",
   "author": "Jannik Laugmand Bülow",
