@@ -19,6 +19,8 @@ jobs:
 
       - run: npm ci
 
+      - run npm install -g tsx
+
       - run: tsx typedoc
 
       - uses: peaceiris/actions-gh-pages@v4
