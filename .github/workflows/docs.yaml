@@ -19,7 +19,7 @@ jobs:
 
       - run: npm ci
 
-      - run npm install -g tsx
+      - run: npm install -g tsx
 
       - run: tsx typedoc
 
